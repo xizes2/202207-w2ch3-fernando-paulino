@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(240, 189, 96);
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.game_interface {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: greenyellow;
+
+    /* Add flexbox style */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.player {
+    margin: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+    background-image: linear-gradient(burlywood, rgb(216, 144, 50));
+    
+  
+ }
+
+.questions {
+  margin: 20px 20px;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.5em;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+}
+
+.points {
+    background-color: rgb(106, 76, 241);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.fails {
+    background-color: rgb(241, 76, 76);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.passed {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    padding: 5px;
+
+}
