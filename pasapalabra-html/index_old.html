@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <h1>PASAPALABRAS</h1>
+  
+  <div class="game_interface" id='game_interface'>
+    
+    <!-- Player 1 -->
+    <div id="player1" class="player">Player 1
+        <div id="player1_name" class="name">player name</div>
+        <div class="points">Correctas
+          <p id="player1_points"></p>
+        </div> 
+        <div class="fails">Erradas
+          <p id="player1_fails"></p>
+        </div>
+        <div class="passed">Pasadas
+          <p id="player1_passed"></p>
+        </div>
+    </div>
+
+    <!-- Questions -->     
+    <div class="questions">
+      <input id="start_button" type="button" value="EMPEZAR" onclick="mainGame()">
+      <p id="questions_player">Jugador:</p>
+      <p id="letter">Letra:</p>
+      <p id="question">...pregunta...</p>
+      <input id="answer" type="text" name="answer" required>
+      <input id='check_button' type="button" value="CHECK" onclick="check()">
+    </div>
+    
+    <!-- Player 2 -->
+    <div id="player2" class="player">Player 2
+      <div id="player2_name" class="name">player name</div>
+      <div class="points">Correctas
+        <p id="player2_points"></p>
+      </div>
+      <div class="fails">Erradas
+        <p id="player2_fails"></p>
+      </div>  
+      <div  class="passed">Pasadas
+        <p id="player2_passed"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- End game screen that stays hidden until it's called -->
+  <div id='end_game' class="end_game">
+    <div>Game Over</div>
+    <input id="start_button" type="button" value="VOLVER A JUGAR" onclick="reloadWindow()">
+  </div>
+
+  <script src="index_old.js"></script>
+</body>
+
+</html>

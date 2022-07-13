@@ -1,0 +1,47 @@
+- Show results on screen:
+    I found 2 ways to see the results of the functions you develop:
+        1. Open the html project, create a div (or similar), link with js using getElementById and setting this div equal to whatever you want to see on screen.
+        2. The other method is to open dev tools (inspect) on the website of the project (html), select the console part and use console.log on the js file to see the results on the console.
+
+- Attention to the variables names!! Something might not be working well if even a letter of a variable name is not correct.
+
+- In order to change between players, we can reassign the player variable to the player name and change the loops 
+
+- I started creating 2 main functions, one for each player to change between players. On the next iteration I included on the first function also the logic to change turn to the second player. On the next iteration I changed the player object (on createPlayers function) so they could have all the necessary keys to change turns the most simple way I could imagine. So after all I have just one function with one main block that changes between players' objects and access all the information on each object. That way each player has it's own name, index, points, fails, questions passed and 'end' count.
+
+- The key concept lerned with this task was to use objects in order to store all the information you need for each player separately (properties of the object).
+
+09/03/22
+- On this exercise we had to connect the .js code with html. In order to make the first .js code to work here I had to separate some functions. One crucial step was to call the showQuestions() function at the end of the check() function. This is to show the next question after the player's answer.
+
+- Breaking my head on how to automatically stop the game when all the questions are asked (questions.length). Since I cannot use 'while', like on the pure .js script, because it does not allow the user to input the answer to the question after each loop - it just keeps looping until the index reaches it's maximum; The best way I thought so far it's to create a function that controls if the index have reached it's max and to use that at the end of check() function. // UPDATE: After many tests I decided to test the index inside the check() function.
+
+- Learned that switch cases can have multiple conditions - look at checkIndex() function.
+
+11/03/22
+- Attention to the order of the cases in switch!! Depending on the conditions you configure each case, they won't be excludent, so, if they are in the incorrect order, one of them will always happen before the other. So, at first, the most excluding case, should be presented before then the one with less conditions. That's why, usually, 'default' comes last.
+
+12, 13, 14/03/22
+- Developed css code, and endGame() and windowReload() functions.
+- Decided to use gameScreen.style.display = 'none'; on endGame() function, in order for the div where end_game is, shows as it would be the only one on the body, so it shows on the uper part of the page. Is I used visibility: 'visible'; the end_game div would be located below the game_screen div.
+
+17/05/22
+- Refactoring the whole code in order to adapt profe indications.
+- Add timer to the game. I used setTimeInterval() to show the timer on screen and setTimeOut.
+- Ended refatoring!!
+
+18/05/22
+- The code is good, but the teacher asked to change the way we present the game.
+
+24/05/22 
+- Changed the presentation to be shown on the first page instead as an alert.
+- Added a button on the first page with a 'direct' function onclick="location.href='game page.html';".
+- Finished last refactoring.
+
+29/05/22
+- Fighting to organize the letters and sincronize with the html.
+
+02/06/22
+- Found a solution to organize the letters and highlight them on the correct order. Basically, on CSS, used position: relative on all of the containers (minus the top one) and defined the position using arbitrary values for top, bottom, right or left. had also to use display: flex in order to distribute equally all letters inside their respective containers.
+- To highlight the letters according to the order in questions I basically used .findIndex() on the letterBubbles array (HTML collection) and compared each element to 'questions' array letter on turn. 
+- Finished last version.

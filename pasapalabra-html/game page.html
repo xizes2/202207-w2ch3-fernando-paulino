@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <h1>PASAPALABRAS</h1>
+  
+  <div class="game_interface" id='game_interface'>
+
+    <!-- Player 1 -->
+    <div id="player1" class="player">Player
+        <div id="player1_name" class="name">player name</div>
+        <div class="player_container">Correctas
+          <p id="player1_points"></p>
+        </div> 
+        <div class="player_container">Erradas
+          <p id="player1_fails"></p>
+        </div>
+        <div class="player_container">Pasadas
+          <p id="player1_passed"></p>
+        </div>
+        <!-- Timer -->
+        <div class="player_container">Timer
+          <div id="counter"></div>
+        </div>
+    </div>
+
+    <!-- Questions -->     
+    <div id="questions">
+      <div id="letters_container_top">
+        <p class="letters">A</p>
+        <p class="letters">B</p>
+        <p class="letters">C</p>
+        <p class="letters">D</p>
+        <p class="letters">E</p>
+        <p class="letters">F</p>
+        <p class="letters">G</p>
+        <p class="letters">H</p>
+      </div>
+      
+      <div id="questions_container">
+        <input id="start_button" type="button" value="EMPEZAR" onclick="main()">
+        <p id="questions_player">Player:</p>
+        <p id="letter">Letra:</p>
+        <p id="question">...pregunta...</p>
+        <input id="answer" type="text" name="answer" required>
+        <input id='check_button' type="button" value="CHECK" onclick="checkAnswer()">
+      </div>
+
+      
+      <div id="letters_container_right">
+        <p class="letters">I</p>
+        <p class="letters">J</p>
+        <p class="letters">K</p>
+        <p class="letters">L</p>
+        <p class="letters">M</p>
+        <p class="letters">N</p>
+      </div>
+
+      <div id="letters_container_bottom">
+        <p class="letters">Ñ</p>
+        <p class="letters">O</p>
+        <p class="letters">P</p>
+        <p class="letters">Q</p>
+        <p class="letters">R</p>
+        <p class="letters">S</p>
+        <p class="letters">T</p>
+        <p class="letters">U</p>
+      </div>
+
+      <div id="letters_container_left">
+        <p class="letters">V</p>
+        <p class="letters">W</p>
+        <p class="letters">X</p>
+        <p class="letters">Y</p>
+        <p class="letters">Z</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- End game screen that stays hidden until it's called -->
+  <div id='end_game' class="end_game">
+    <div>Game Over</div>
+    <input id="start_button" type="button" value="VOLVER A JUGAR" onclick="reloadWindow()">
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

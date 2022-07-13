@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Days+One&family=Limelight&family=Marcellus+SC&family=Norican&family=Rozha+One&display=swap');
+
+* {
+  margin: 0px;
+}
+
+body {
+  padding: 10px;
+  color: white;
+
+  /* Create padded pattern to simulate a cassino or game house */
+  background:
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+  background-color: #300;
+  background-size: 100px 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Limelight', cursive;
+  color: rgb(212, 175, 55);;
+  font-size: 3em;
+  text-shadow: black 5px 5px 10px;
+}
+
+.game_interface {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+
+  /* Add flexbox style */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+.player {
+  margin: 20px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.7em;
+  height: 500px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  background-image: linear-gradient(rgb(51, 0, 25, 0.5), rgb(51, 0, 25));
+  color: rgb(212, 175, 55);
+  font-family: 'Berkshire Swash', cursive;
+  text-shadow: black 5px 5px 10px;
+}
+
+.questions {
+  margin: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  height: 500px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  padding: 20px 10px 0px 10px;
+  background-color: rgb(40, 40, 40);
+  font-family: 'Days One', sans-serif;
+  text-shadow: black 5px 5px 10px;
+}
+
+.points {
+  width: 120px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.fails {
+  width: 120px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.passed {
+  width: 120px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+#letter, #questions_player {
+  width: 150px;
+  height: 80px;
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#start_button, #check_button {
+  background-color: rgb(212, 175, 55);
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  height: 30px;
+  font-family: 'Days One', sans-serif;
+}
+
+#answer {
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  font-family: 'Days One', sans-serif;
+}
+
+.end_game {
+  display: 'block';
+  text-align: center;
+  font-family: 'Days One', sans-serif;
+  font-size: 2em;
+  text-shadow: black 5px 5px 10px;
+  visibility: hidden;
+  margin: 100px;
+}
+
+.end_game > div {
+  margin: 50px;
+  
+  /* Add border to text */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
