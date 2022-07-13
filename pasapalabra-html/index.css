@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Days+One&family=Limelight&family=Marcellus+SC&family=Norican&family=Rozha+One&display=swap');
+
+* {
+  margin: 0px;
+}
+
+body {
+  padding: 10px;
+  color: white;
+
+  /* Create padded pattern to simulate a cassino or game house */
+  background:
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+    radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+    radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+    radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+    radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+    linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+    linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+  background-color: #300;
+  background-size: 100px 100px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Limelight', cursive;
+  color: rgb(212, 175, 55);;
+  font-size: 3em;
+  text-shadow: black 5px 5px 10px;
+}
+
+.game_interface {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+
+  /* Add flexbox style */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  align-items: center;
+}
+
+.player {
+  margin: 20px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.7em;
+  height: 600px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  background-image: linear-gradient(rgb(51, 0, 25, 0.5), rgb(51, 0, 25));
+  color: rgb(214, 182, 78);
+  font-family: 'Berkshire Swash', cursive;
+  text-shadow: black 5px 5px 10px;
+}
+
+#presentation {
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.7em;
+  height: 800px;
+  width: 800px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  background-image: linear-gradient(rgb(51, 0, 25, 0.5), rgb(51, 0, 25));
+  color: rgb(214, 182, 78);
+  font-family: 'Days One';
+  text-shadow: black 5px 5px 10px;
+}
+
+/*
+#central_container {
+  padding: 20px 0px 20px 0px;
+  margin: 0px;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  width: inherit;
+}
+*/
+
+.player_container {
+  width: 120px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+#counter {
+  color: white;
+  font-size: 50px;
+}
+
+#letter, #questions_player {
+  width: 150px;
+  height: 80px;
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#question {
+  display: flex;
+  height: 200px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+#start_button, #check_button, #game_on {
+  background-color: rgb(212, 175, 55);
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  height: 30px;
+  font-family: 'Days One', sans-serif;
+
+}
+
+#answer {
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  font-family: 'Days One', sans-serif;
+  margin: 10px 0px 10px 0px;
+}
+
+.end_game {
+  display: 'block';
+  text-align: center;
+  font-family: 'Days One', sans-serif;
+  font-size: 2em;
+  text-shadow: black 5px 5px 10px;
+  visibility: hidden;
+  margin: 100px;
+}
+
+.end_game > div {
+  margin: 50px;
+  
+  /* Add border to text */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#questions {
+  margin: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.3em;
+  height: 800px;
+  overflow: hidden;
+  width: 700px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  padding: 20px 10px 0px 10px;
+  background-color: rgb(40, 40, 40);
+  font-family: 'Days One', sans-serif;
+  text-shadow: black 5px 5px 10px;
+}
+
+#letters_container_top {
+  display: flex;
+  align-items: baseline;
+  height: 80px;
+
+}
+
+#questions_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;  
+  margin-bottom: 30px;
+}
+
+#letters_container_right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: space-between;
+  height: 500px;
+  left: 640px;
+  bottom: 600px;
+}
+
+#letters_container_bottom {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  direction: rtl;
+  justify-content: space-between;
+  align-items: center; 
+  bottom: 515px;
+  align-items: baseline;
+}
+
+#letters_container_left {
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  bottom: 1180px;
+  left: 10px;
+  width: fit-content;
+  height: 500px;
+}
+
+.letters {
+  background-color: rgb(212, 175, 55);
+  border-radius: 100px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.438);
+  font-family: 'Days One', sans-serif;
+  width: 30px;
+  height: 30px;
+}
