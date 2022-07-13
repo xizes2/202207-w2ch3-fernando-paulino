@@ -1,0 +1,22 @@
+19/03/22
+- Begin airlines.js
+20/03/22
+- Finished airlines.js
+
+-*-*-
+22/03/22
+- Begin airlines-pro
+- Attention when you are testing for null or undefined values for numbers or other specific types (like boolean). On the while test you cannot force the change of the result from string to Number (or boolean), you have to do it after the test is made, outside the loop.
+
+25/03
+- Developing user functions
+- Learned a little about the .filter method, that is used to filter an object, inside an array, by one of it's properties. (Look the end of the function searchFlightByPrice()) 
+
+26/03
+- In order to return a boolean value yo cannot use Boolean(x). You have to test the value like so: x === 'true'. The result will be either TRUE or FALSE and these will be booleans, not string.
+- Finished 1st version of airlines-pro
+
+09/04
+- Refactored code of airlines
+- Learned the array method .join() to add a string (or whatever) between the array's elements.
+- Finished reviewed version of airlines
