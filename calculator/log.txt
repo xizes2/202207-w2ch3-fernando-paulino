@@ -1,0 +1,47 @@
+15/03/22
+- Begin calculadora project
+16/03/22
+- Attention to the result of a function that returns something. You have to asign this function call to a variable in order to see the result and make it valid.
+- Finished first version
+
+-*-*-
+
+17/03/22
+- Begin calculator-pro project
+- Strugling to find what's the best way to filter numbers: regex?, isInteger()?, module% ?. // After different tries I used 'num % 1' to check for NaN and changed to if-else statement (instead of switch) cause it seemed easier to read and more organized for the problem in hand. // Last change: I adapted the function testNum(), from calculator, in order for it to be used with a while loop and return results accordingly to the logic desired.
+
+18/03/22
+Last change: Realized that I could use all the code from calculator in calculator-pro and just had to adapt an extra question/function to ask user if he wants to make new operation or not.
+
+19/03/22
+- Finished first version of calculator-pro
+
+8/4/22
+- Refactored code so the program would accept indetermined amount of numbers and make the calculations with every one of them.
+- Attention to this snippet of David Lozano for the operations part:
+
+    let sumTotal = listaNumeros[0];
+    let resTotal = listaNumeros[0];
+    let mulTotal = listaNumeros[0];
+    let divTotal = listaNumeros[0];
+        
+    for (pos = 1; pos < listaNumeros.length; pos++){
+        sumTotal += listaNumeros[pos];
+        resTotal -= listaNumeros[pos];
+        mulTotal *= listaNumeros[pos];
+        divTotal /= listaNumeros[pos];
+    }
+
+    numResultado.push(Math.floor(sumTotal*1000)/1000);
+    numResultado.push(Math.floor(resTotal*1000)/1000);
+    numResultado.push(Math.floor(mulTotal*1000)/1000);
+    numResultado.push(Math.floor(divTotal*1000)/1000);
+
+    alert("Para los números " +listaNumeros+
+    "\nLa suma total es " + numResultado[0] + 
+    "\nLa resta total es " + numResultado[1] +
+    "\nLa multiplicación total es " + numResultado[2] +
+    "\nLa división total es " + numResultado[3]);
+}
+    Very clean and elegant. 
+- Finished refactoring with the help of David lozano's code.
