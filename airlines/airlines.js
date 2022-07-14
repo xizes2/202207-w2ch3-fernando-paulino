@@ -28,12 +28,14 @@ const scaledFlightsList = [];
 
 const lastFiveFlights = [];
 
-let userName;
+const userName = () => {
+  const name = prompt("Please, enter your name:");
+  return name;
+};
 
-function welcome() {
-  userName = prompt("Please, enter your name:");
+const welcome = () => {
   alert(`Welcome to Skylab Airlines, ${userName}!`);
-}
+};
 
 // Change boolean value to 'yes' or 'no' to show more user friendly is flight has scale or not
 function boolToWord(bool) {
@@ -123,3 +125,5 @@ function main() {
 }
 
 main();
+
+export default userName;
